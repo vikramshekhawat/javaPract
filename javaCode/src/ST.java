@@ -125,7 +125,7 @@ public class ST {
         int relocations = 0;
         LinkedList<Integer> negativeQueue = new LinkedList<>();
 
-        for (int value : A) {
+        for (int value : B) {
             cumSum += value;
 
             if (value < 0) {
