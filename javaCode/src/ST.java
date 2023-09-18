@@ -125,14 +125,14 @@ public class ST {
         int relocations = 0;
         LinkedList<Integer> negativeQueue = new LinkedList<>();
 
-        for (int value : A) {
+        for (int value : B) {
             cumSum += value;
 
-            if (value < 0) {
+            if (value < 1) {
                 negativeQueue.add(value);
             }
 
-            while (cumSum < 0 && !negativeQueue.isEmpty()) {
+            while (cumSum < 1 && !negativeQueue.isEmpty()) {
                 cumSum -= negativeQueue.poll();
                 relocations++;
             }
